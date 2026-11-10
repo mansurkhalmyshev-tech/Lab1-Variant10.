@@ -5,6 +5,9 @@
 **Вариант:** 10
 **Уровень:** Средний
 **Технология:** Node.js + Express
+**Ссылка на репозиторий** 
+https://github.com/mansurkhalmyshev-tech/Lab1-Variant10
+
 
 ## Содержание
 
@@ -61,8 +64,12 @@ json
   "test": "echo \"Error: no test specified\" && exit 1",
   "dev": "nodemon app.js"
 }
+```
 Скриншоты выполнения установки
-https://screenshots/terminal-commands.png
+![Терминал 1.png](<screenshots/terminal-commands.png/Терминал 1.png>)
+![Терминал 1(2).png](<screenshots/terminal-commands.png/Терминал 1(2).png>)
+
+```
 Рисунок 1 — Процесс установки зависимостей и запуска сервера
 
 Выполнение индивидуального задания
@@ -111,21 +118,24 @@ app.listen(port, () => {
 Проверка работы всех эндпоинтов
 Проверка осуществлялась через адресную строку браузера (отправка GET-запросов).
 
-1. Корневой маршрут (http://localhost:3000/)
-https://screenshots/root.png
-Рисунок 2 — Текстовый ответ сервера
+```
+1. Корневой маршрут:
+![Результат.png](Результат.png) 
+Рисунок 1 — Корневой маршрут
+``` 
+```
+1. Список событий (http://localhost:3000/api/events)
+![events.png]( events.png)
+Рисунок 2 — JSON-ответ со списком событий
+```
+```
+1. Справочник локаций (http://localhost:3000/api/locations)
+![locations.png](locations.PNG)
+Рисунок 3 — JSON-ответ со списком локаций
 
-2. Список событий (http://localhost:3000/api/events)
-https://screenshots/events.png
-Рисунок 3 — JSON-ответ со списком событий
-
-3. Справочник локаций (http://localhost:3000/api/locations)
-https://screenshots/locations.png
-Рисунок 4 — JSON-ответ со списком локаций
-
-4. Несуществующий маршрут (http://localhost:3000/abc)
-https://screenshots/404.png
-Рисунок 5 — Кастомная обработка ошибки 404
+1. Несуществующий маршрут (http://localhost:3000/abc)
+![404.png ](404.png)
+Рисунок 4 — Кастомная обработка ошибки 404
 
 Итоговая структура проекта
 text
